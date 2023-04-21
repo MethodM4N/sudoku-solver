@@ -16,7 +16,7 @@ https://codesandbox.io/s/sudoku-solver-kolganov-hcbyxn?file=/index.html
 
 ```
 - HTML5
-- CSS3 (SCSS)
+- CSS3
 ```
 
 ```JS
