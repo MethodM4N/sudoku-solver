@@ -3,11 +3,13 @@
     <h1>Данное веб приложение решит за вас Судоку.</h1>
     <form class="main__content">
       <div>
+        <h2>Задача</h2>
         <div class="main__set-grid" v-for="(gameGrid, index) in gameGrid" :key="index">
           <p v-for="square in gameGrid">{{ square }}</p>
         </div>
       </div>
       <div>
+        <h2>Решение</h2>
         <div class="main__solved-grid" v-for="(gameGrid, index) in solvedGrid" :key="index">
           <p v-for="square in gameGrid">{{ square }}</p>
         </div>
@@ -67,6 +69,11 @@ export default {
       margin: 0;
       padding-left: 10px;
       font-size: 20px;
+    }
+
+    h2 {
+      margin: 0 auto 10px;
+      text-align: center;
     }
   }
 

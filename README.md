@@ -1,8 +1,10 @@
 ## Тестовое задание: алгоритм решения судоку.
 
-## Ссылка на результат выполнения.
+## Ссылка на результат выполнения sandbox/gh-pages.
 
 https://codesandbox.io/s/sudoku-solver-kolganov-hcbyxn?file=/index.html
+
+https://methodm4n.github.io/sudoku-solver/
 
 ## Функциональные особенности
 
@@ -20,5 +22,6 @@ https://codesandbox.io/s/sudoku-solver-kolganov-hcbyxn?file=/index.html
 ```
 
 ```JS
-- JavaScript ES2015
+- JavaScript
+- Vue.js
 ```
