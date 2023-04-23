@@ -113,7 +113,7 @@ export default {
     &__set-grid {
       display: flex;
       position: relative;
-      max-width: 326px;
+      max-width: 328px;
 
       input {
         padding: 2px 1px;
@@ -123,10 +123,10 @@ export default {
         border: 1px solid rgba(0, 0, 0, 0.459);
 
         &:last-child {
-          border-right: 2px solid black;
+          border-right: 3px solid black;
         }
         &:first-child {
-          border-left: 2px solid black;
+          border-left: 3px solid black;
         }
       }
 
@@ -150,7 +150,7 @@ export default {
           display: block;
           background-color: black;
           height: 3px;
-          width: 324px;
+          width: 325px;
           position: absolute;
           top: 86px;
           z-index: 1;
@@ -165,7 +165,7 @@ export default {
           display: block;
           background-color: black;
           height: 3px;
-          width: 324px;
+          width: 325px;
           position: absolute;
           bottom: 85px;
           z-index: 1;
