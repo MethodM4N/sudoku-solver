@@ -1,11 +1,17 @@
 <template>
   <section class="main">
     <h1>Данное веб приложение решит за вас Судоку.</h1>
-    <form class="main__content">
+    <form class="main__content" @submit.prevent="onSubmit">
       <div>
         <h2>Задача</h2>
         <div class="main__set-grid" v-for="(gameGrid, index) in gameGrid" :key="index">
-          <p v-for="square in gameGrid">{{ square }}</p>
+          <input
+            v-for="(square, index) in gameGrid"
+            type="number"
+            min="0"
+            max="9"
+            v-model.number="gameGrid[index]"
+          />
         </div>
       </div>
       <div>
@@ -14,6 +20,7 @@
           <p v-for="square in gameGrid">{{ square }}</p>
         </div>
       </div>
+      <button type="submit">Решить</button>
     </form>
   </section>
 </template>
@@ -39,6 +46,11 @@ export default {
       solvedGrid: [],
     };
   },
+  methods: {
+    onSubmit() {
+      this.solvedGrid = solveSudokuAlgorithm(this.gameGrid);
+    },
+  },
   mounted() {
     this.solvedGrid = solveSudokuAlgorithm(this.gameGrid);
   },
@@ -61,6 +73,7 @@ export default {
   }
 
   &__content {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 100px;
@@ -75,10 +88,20 @@ export default {
       margin: 0 auto 10px;
       text-align: center;
     }
+
+    button {
+      padding: 10px 20px;
+      position: absolute;
+      bottom: -70px;
+    }
   }
 
   &__set-grid {
     display: flex;
+
+    input {
+      width: 32px;
+    }
   }
 
   &__solved-grid {
