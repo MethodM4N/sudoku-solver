@@ -20,7 +20,7 @@ https://codesandbox.io/s/sudoku-solver-kolganov-hcbyxn?file=/index.html - алг
 
 ```
 - HTML5
-- CSS3
+- CSS3 (SCSS)
 ```
 
 ```JS

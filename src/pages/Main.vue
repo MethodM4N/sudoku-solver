@@ -6,6 +6,7 @@
         <h2>Задача</h2>
         <div class="form__set-grid" v-for="(gameGrid, index) in gameGrid" :key="index">
           <input
+            autofocus
             v-for="(square, index) in gameGrid"
             type="number"
             min="0"
